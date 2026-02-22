@@ -85,4 +85,3 @@ function calculadoraMedia(){
     alert(`A média de ${nome} é: ${media}`);
 
 }
-
