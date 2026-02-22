@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/exercicio-seletores.css">
+</head>
+<body>
+
+    <h1>Cadastro</h1>
+
+    <button id="botao-cadastro-pf">Realizar cadastro como Pessoa Fisica</button>
+    <button id="botao-cadastro-pj">Realizar cadastro como Pessoa Juridica</button>
+
+
+    <div id="formulario-cadastro">
+        <div id="tipo-pf">
+            <label for="campo-nome">Digite seu nome</label>
+            <input type="text" id="campo-nome">
+            <label for="campo-cpf">Digite seu CPF</label>
+            <input type="number" id="campo-cpf">
+            
+            <label for="campo-rg">Digite seu RG</label>
+            <input type="number" id="campo-rg">
+            
+            <label for="campo-data-nascimento">Digite sua data de nascimento</label>
+            <input type="date" id="campo-data-nascimento">
+        </div>
+        
+        <div id="tipo-pj">
+            <label for="campo-cnpj">Digite seu CNPJ</label>
+            <input type="number" id="campo-cnpj">
+            
+            <label for="campo-razao-social">Digite sua razão social</label>
+            <input type="text" id="campo-razao-social">
+        </div>
+    </div>
+
+    
+    <script src="assets/js/exercicio-seletores.js"></script>
+</body>
+</html>
