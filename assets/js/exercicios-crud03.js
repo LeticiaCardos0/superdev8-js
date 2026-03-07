@@ -1,9 +1,9 @@
 const botaoSalvarCadastro = document.getElementById("salvar");
+    botaoSalvarCadastro.addEventListener("click", salvarCadastro);
 const tbody = document.getElementById("resumo-imoveis");
 
-let id = 1; // contador global para o código do imóvel
+let id = 1;
 
-botaoSalvarCadastro.addEventListener("click", salvarCadastro);
 
 function salvarCadastro() {
     const campoLocalidade = document.getElementById("campo-localidade");
@@ -18,22 +18,10 @@ function salvarCadastro() {
     const quantidadeMetros = parseFloat(campoQuantidadeMetros.value);
     const construcao = campoConstrucao.value;
 
-    // Validação simples
-    if (!localidade || !proprietario || isNaN(valorImovel) || isNaN(quantidadeMetros) || !construcao) {
-        alert("Por favor, preencha todos os campos corretamente.");
-        return;
-    }
-
     const valorMetro = valorImovel / quantidadeMetros;
 
     criarLinha(localidade, proprietario, valorImovel, quantidadeMetros, construcao, valorMetro);
 
-    // Limpar campos após salvar
-    campoLocalidade.value = "";
-    campoProprietario.value = "";
-    campoValor.value = "";
-    campoQuantidadeMetros.value = "";
-    campoConstrucao.value = "";
 }
 
 function criarLinha(localidade, proprietario, valorImovel, quantidadeMetros, construcao, valorMetro) {
@@ -47,5 +35,5 @@ function criarLinha(localidade, proprietario, valorImovel, quantidadeMetros, con
                 <td>${construcao}</td>
             </tr>`;
     tbody.innerHTML += linha;
-    id++;
+    id += 1;
 }

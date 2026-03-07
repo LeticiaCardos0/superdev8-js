@@ -1,0 +1,91 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo da página */
+body{
+    background-color: #121212;
+    color: #f1f1f1;
+    padding: 30px;
+}
+
+/* Título */
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Área de cadastro */
+#cadastro-filmes{
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+label{
+    font-size: 14px;
+}
+
+/* Inputs e select */
+input, select{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+/* Botão */
+button{
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a86ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2f6fd3;
+}
+
+/* Tabela */
+table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+}
+
+/* Cabeçalho */
+thead{
+    background-color: #2a2a2a;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even){
+    background-color: #242424;
+}
+
+tbody tr:hover{
+    background-color: #333;
+}

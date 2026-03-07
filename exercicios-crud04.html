@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/exercicio-crud04.css">
+    <title>Cadastro de Filmes</title>
+</head>
+<body>
+
+<h1>Cadastro de Filmes</h1>
+
+<div id="cadastro-filmes">
+    <label for="campo-nome">Digite o nome do Filme</label>
+    <input type="text" id="campo-nome">
+
+    <label for="campo-genero">Informe o gênero do filme</label>
+    <input type="text" id="campo-genero">
+
+    <label for="campo-duracao">Informe a duração do filme em minutos</label>
+    <input type="number" id="campo-duracao">
+
+    <label for="campo-nota">Nota dada ao filme</label>
+    <input type="number" id="campo-nota" min="0" max="10">
+
+    <label for="campo-cinema">Assistido no cinema?</label>
+    <select id="campo-cinema">
+        <option value="" selected disabled>Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+</div>
+
+<button id="salvar">Salvar</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome Filme</th>
+            <th>Gênero</th>
+            <th>Duração</th>
+            <th>Nota</th>
+            <th>Classificação</th>
+            <th>Assistido no Cinema</th>
+        </tr>
+    </thead>
+    <tbody id="resumo-filmes">
+    </tbody>
+</table>
+
+<script src="assets/js/exercicios-crud04.js"></script>
+
+</body>
+</html>
