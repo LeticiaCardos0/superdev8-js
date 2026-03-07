@@ -8,16 +8,18 @@
 </head>
 <body>
 
+    
+    
+    
     <h1>Cadastro</h1>
+        <label for="campo-nome">Digite seu nome</label>
+        <input type="text" id="campo-nome">
+        <div>
+            <button class="butao" id="tipo-cadastro-pf">Realizar cadastro como pessoa Fisica</button>
+            <button id="tipo-cadastro-pj">Realizar cadastro como pessoa Juridica</button>
+        </div>
 
-    <button id="botao-cadastro-pf">Realizar cadastro como Pessoa Fisica</button>
-    <button id="botao-cadastro-pj">Realizar cadastro como Pessoa Juridica</button>
-
-
-    <div id="formulario-cadastro">
         <div id="tipo-pf">
-            <label for="campo-nome">Digite seu nome</label>
-            <input type="text" id="campo-nome">
             <label for="campo-cpf">Digite seu CPF</label>
             <input type="number" id="campo-cpf">
             
@@ -35,7 +37,6 @@
             <label for="campo-razao-social">Digite sua razão social</label>
             <input type="text" id="campo-razao-social">
         </div>
-    </div>
 
     
     <script src="assets/js/exercicio-seletores.js"></script>

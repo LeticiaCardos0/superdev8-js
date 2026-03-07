@@ -1,15 +1,13 @@
 const formularioCadastro = document.getElementById("formulario-cadastro")
-    formularioCadastro.addEventListener("click",cadastro)
+formularioCadastro.addEventListener("click", cadastro)
 
-const formularioCadastroPf = document.getElementById("botao-cadastro-pf")
-    formularioCadastro.addEventListener("click",cadastroPessoaFisica)
-    
-const formularioCadastroPj = document.getElementById("botao-cadastro-pf")
-    formularioCadastro.addEventListener("click",cadastroPessoaJuridica)
+const formularioCadastroPf = document.getElementById("tipo-cadastro-pf")
+formularioCadastroPf.addEventListener("click", cadastroPessoaFisica)
 
+const formularioCadastroPj = document.getElementById("tipo-cadastro-pj")
+formularioCadastroPj.addEventListener("click", cadastroPessoaJuridica)
 
-function cadastro(){
-    let 
-
-    }
-
+function cadastroPessoaFisica(){
+    const divFormularioPf = document.querySelector(".botao");
+    divFormularioPf.style.display = "block";
+}

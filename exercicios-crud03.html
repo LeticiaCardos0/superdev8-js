@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Imóveis</title>
+    <link rel="stylesheet" href="assets/css/exercicio-crud03.css">
+</head>
+
+<body>
+    <h1>Cadastro de Imóveis</h1>
+
+    <div id="cadastro">
+        <label for="campo-localidade">Digite a localidade do imóvel</label>
+        <input type="text" id="campo-localidade">
+
+        <label for="campo-proprietario">Digite o nome do proprietário</label>
+        <input type="text" id="campo-proprietario">
+
+        <label for="campo-valor">Digite o valor do imóvel</label>
+        <input type="number" id="campo-valor">
+
+        <label for="campo-quantidade-metros">Digite a quantidade de metros²</label>
+        <input type="number" id="campo-quantidade-metros">
+
+        <label for="campo-construcao">Possui construção?</label>
+        <select id="campo-construcao">
+            <option value="" disabled selected>Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <button id="salvar">Salvar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Localidade</th>
+                <th>Proprietário</th>
+                <th>Valor do imóvel</th>
+                <th>Quantidade M²</th>
+                <th>Valor M²</th>
+                <th>Possui construção</th>
+            </tr>
+        </thead>
+        <tbody id="resumo-imoveis">
+            <!-- As linhas serão adicionadas aqui -->
+        </tbody>
+    </table>
+
+    <script src="assets/js/exercicios-crud03.js"></script>
+</body>
+
+</html>
