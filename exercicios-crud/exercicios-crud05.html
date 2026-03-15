@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/exercicio-crud05.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Veiculos</h1>
+
+    <div>
+        <label for="campo-modelo">Modelo</label>
+        <input type="text" id="campo-modelo">
+
+        <label for="campo-marca">Marca</label>
+        <input type="text" id="campo-marca">   
+        
+        <label for="campo-ano">Ano</label>
+        <input type="number" id="campo-ano">
+
+        <label for="campo-valor">Valor</label>
+        <input type="number" id="campo-valor">
+ 
+        <label for="campo-quantidade-portas">Quantida de Portas</label>
+        <input type="number" id="campo-quantidade-portas">       
+    </div>
+    <button id="botao-salvar">Salvar</button>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th>Valor Veiculo</th>
+                <th>Quantidade de Portas</th>
+                <th>Idade Veiculo</th>
+            </tr>
+        </thead>
+        <tbody id="veiculos">
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+
+        
+    </table>
+
+
+    <script src="../assets/js/exercicios-crud05.js"></script>
+</body>
+</html>
