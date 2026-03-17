@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/exercicio-crud06.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de produtos - Mercado </h1>
+
+    <div>
+        <label for="campo-nome">Nome Produto</label>
+        <input type="text" id="campo-nome">
+
+        <label for="campo-categoria">Informa a Categoria do Produto</label>
+        <select id="campo-categoria">
+            <option value="" disabled selected>Selecione</option>
+            <option value="cozinha">Cozinha</option>
+            <option value="açougue">Açougue</option>
+            <option value="fruta">Fruta</option>
+            <option value="bebida">Babida</option>
+            <option value="padaria">Babida</option>
+            <option value="limpeza">Limpeza</option>
+        </select>
+        
+        <label for="campo-preco">Preço Produto</label>
+        <input type="number" id="campo-preco">
+        
+        <label for="campo-quantidade">Informa a quantidade em estoque</label>
+        <input type="number" id="campo-quantidade">
+       
+    </div>
+    <button id="cadastrar">Cadastrar</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nome Produto</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Quantidade em Estoque</th>
+                <th>Valor Total em Estoque</th>
+            </tr>
+        </thead>
+        <tbody id="produtos">
+        </tbody>
+    </table>
+
+    <script src="../assets/js/exercicios-crud06.js"></script>
+</body>
+</html>
