@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/exercicio-crud08.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Funcionarios</h1>
+
+    <div>
+        <label for="campo-nome">Nome Funcionario</label>
+        <input type="text" id="campo-nome">
+
+        <label for="campo-cargo">Selecione o Cargo</label>
+        <select id="campo-cargo">
+            <option value="" selected disabled>Selecione</option>
+            <option value="Junior">Junior</option>
+            <option value="Pleno">Pleno</option>
+            <option value="Senior">Senior</option>
+        </select>
+
+        <label for="campo-salario">Salario</label>
+        <input type="number" id="campo-salario">
+
+        <label for="campo-filhos">Quantidade de Filhos</label>
+        <input type="number" id="campo-filhos">
+    
+    </div>
+    <button id="salvar">Salvar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Salario</th>
+                <th>Quantidade de Filhos</th>
+                <th>Auxilio Familia</th>
+                <th>Salario Final</th>
+            </tr>
+        </thead>
+        <tbody id="funcionarios">
+        </tbody>
+    </table>
+
+
+    
+    <script src="../assets/js/exercicios-crud08.js"></script>
+</body>
+</html>
