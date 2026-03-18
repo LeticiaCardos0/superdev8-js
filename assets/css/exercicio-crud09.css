@@ -1,0 +1,102 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Corpo */
+body{
+background:#0f172a;
+color:#e2e8f0;
+padding:40px;
+}
+
+/* Título */
+h1{
+text-align:center;
+color:#38bdf8;
+margin-bottom:30px;
+}
+
+/* Formulário */
+div{
+background:#1e293b;
+padding:20px;
+border-radius:8px;
+width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Labels */
+label{
+font-size:14px;
+}
+
+/* Inputs */
+input{
+padding:10px;
+border-radius:6px;
+border:1px solid #334155;
+background:#0f172a;
+color:#ffffff;
+}
+
+/* Foco */
+input:focus{
+outline:none;
+border-color:#38bdf8;
+}
+
+/* Botão */
+button{
+display:block;
+margin:20px auto;
+padding:10px 20px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+transition:0.2s;
+color:#0f172a;
+}
+
+button:hover{
+background:#0ea5e9;
+}
+
+/* Tabela */
+table{
+width:90%;
+margin:40px auto;
+border-collapse:collapse;
+background:#1e293b;
+border-radius:8px;
+overflow:hidden;
+}
+
+/* Cabeçalho */
+th{
+background:#0f172a;
+color:#38bdf8;
+padding:12px;
+text-align:center;
+}
+
+/* Células */
+td{
+padding:10px;
+text-align:center;
+border-bottom:1px solid #334155;
+}
+
+/* Hover */
+tbody tr:hover{
+background:#334155;
+}
