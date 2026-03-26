@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/exercicio-crud10.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro Pedidos - Lanchonete </h1>
+
+    <div>
+        <label for="campo-nome">Nome Cliente</label>
+        <input type="text" id="campo-nome">
+
+        <label for="campo-mesa">Mesa Cliente</label>
+        <input type="number" id="campo-mesa">
+
+        <label for="campo-pedido">Pedido</label>
+        <input type="text" id="campo-pedido">
+
+        <label for="campo-quantidade">Quantidade</label>
+        <input type="number" id="campo-quantidade">
+
+        <label for="campo-valor">Valor Unitario</label>
+        <input type="number" id="campo-valor">
+    </div>
+    <button id="botao-salvar">Salvar Pedido</button>
+     
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome Cliente</th>
+                <th>Mesa</th>
+                <th>Lanche</th>
+                <th>Quantidade</th>
+                <th>Valor Unitario</th>
+                <th>Valor Total Pedido</th>
+            </tr>
+        </thead>
+        <tbody id="lista-pedidos">
+        </tbody>
+    </table>
+
+    <script src="../assets/js/exercicios-crud10.js"></script>
+    
+</body>
+</html>
