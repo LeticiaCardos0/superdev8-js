@@ -28,12 +28,17 @@ function salvar(){
                     <td>${id}</td>
                     <td>${nome}</td>
                     <td>${genero}</td>
-                    <td>${duracao}</td>
-                    <td>${faixa}</td>
+                    <td>${duracao} Minutos</td>
+                    <td>+${faixa}</td>
                     <td>${classificacao}</td>
                  </tr>`
 
     tbody.innerHTML += linha;
     id++
+
+    campoNome.value = "";
+    campoGenero.value = "";
+    campoDuracao.value = "";
+    campoFaixa.value = "";
 
 }
