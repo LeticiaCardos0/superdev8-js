@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/exercicio-crud12.css">
+    <title>Cadastro de Celulares</title>
+</head>
+<body>
+
+<h1>Cadastro de Celulares</h1>
+
+<div>
+    <label for="campo-marca">Marca</label>
+    <input type="text" id="campo-marca">
+
+    <label for="campo-modelo">Modelo</label>
+    <input type="text" id="campo-modelo">
+
+    <label for="campo-valor">Valor</label>
+    <input type="number" id="campo-valor">
+
+    <label for="campo-quantidade">Quantidade em estoque</label>
+    <input type="number" id="campo-quantidade">
+</div>
+
+<button id="botao-salvar">Salvar</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+            <th>Valor Total</th>
+        </tr>
+    </thead>
+    <tbody id="lista-celulares"></tbody>
+</table>
+
+<script src="../assets/js/exercicios-crud12.js"></script>
+
+</body>
+</html>
